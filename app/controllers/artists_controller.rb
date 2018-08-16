@@ -14,6 +14,7 @@ class ArtistsController < ApplicationController
 
   def create
     @artist = Artist.create(artist_params)
+    redirect_to artist_url(@artist)
   end
 
 
