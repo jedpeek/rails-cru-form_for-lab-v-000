@@ -1,3 +1,12 @@
-<% @songs.each do |song| %>
-<h1> <%= song.name %> </h1>
+<%= form_for @song do |f| %>
+   <%= f.label :name %>:
+   <%= f.text_field :name %><br />
+
+   <%= f.label :genre_id %>:
+   <%= f.text_field :name %><br />
+
+   <%= f.label :name %>:
+   <%= f.text_field :name %><br />
+
+   <%= f.submit %>
 <% end %>
