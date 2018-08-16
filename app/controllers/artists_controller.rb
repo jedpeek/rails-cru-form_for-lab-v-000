@@ -27,6 +27,7 @@ class ArtistsController < ApplicationController
     @artist.save
 
     redirect_to artist_url(@artist)
+  end
 
 
 
