@@ -1,4 +1,4 @@
 <h1> Songs Page </h1>
 <% @songs.each do |song| %>
-<h1> <%= link_to song.name, song_url(song) %> </h1>
+<h1> <%= link_to(song.name, song_url(song)) %> </h1>
 <% end %>
