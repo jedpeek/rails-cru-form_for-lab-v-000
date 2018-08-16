@@ -1,9 +1,4 @@
 <h1> Songs Page </h1>
 <% @songs.each do |song| %>
-  <% @artist = Artist.find_by_id(song.artist_id) %>
-  <% @genre = Genre.find_by_id(song.genre_id) %>
-
   <p> Song: <%= link_to(song.name, song_url(song)) %></p>
-  <p> Genre: <%= link_to(@genre.name, genre_url(@genre)) %></p>
-  <p> Artist: <%= link_to(@artist.name, artist_url(@artist)) %></p>
 <% end %>
