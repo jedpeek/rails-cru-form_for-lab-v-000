@@ -16,4 +16,5 @@ class ArtistsController < ApplicationController
 
   def artist_params
     params.require(:artist).include(:name, :bio)
+  end
 end
