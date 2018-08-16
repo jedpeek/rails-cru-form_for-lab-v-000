@@ -2,7 +2,7 @@
 <% @songs.each do |song| %>
 <% artist = Artist.find(song.artist_id) %>
 <% genre = Genre.find(song.genre_id) %>
-<h1> <%= link_to(song.name, song_url(song)) %></h1>
+<p> <%= link_to(song.name, song_url(song)) %></p>
 <p> Genre: <%= link_to(genre.name, genre_url(genre)) %></p>
 <p> Artist: <%= link_to(artist.name, artist_url(artist)) %></p>
 <% end %>
