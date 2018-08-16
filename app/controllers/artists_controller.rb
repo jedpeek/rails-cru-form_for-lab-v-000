@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    @artist = Artist.create(artist_params)
+    @artist = Artist.new
   end
 
   def create
