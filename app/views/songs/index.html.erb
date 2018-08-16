@@ -3,6 +3,6 @@
 <% artist = Artist.find(song.artist_id) %>
 <% genre = Genre.find(song.genre_id) %>
 <h1> <%= link_to(song.name, song_url(song)) %></h1>
-<h4> Genre: <%= link_to(genre, genre_url(genre)) %></h4>
-<h4> Artist: <%= link_to(artist, artist_url(artist)) %></h4>
+<h4> Genre: <%= link_to(genre.name, genre_url(genre)) %></h4>
+<h4> Artist: <%= link_to(artist.name, artist_url(artist)) %></h4>
 <% end %>
